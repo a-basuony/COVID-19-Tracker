@@ -1,0 +1,59 @@
+.app__map {
+  height: 500px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.app__map .leaflet-container {
+  height: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: white;
+  font: 1rem/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.leaflet-popup-content {
+  margin: 1.1875em 1.1875em;
+}
+.info-container {
+  width: 100%;
+}
+
+.info-flag {
+  height: 5em;
+  /* width: 100%; */
+  background-size: 100% 100%;
+  border-radius: 8px;
+  padding-bottom: 1.25em;
+  background-repeat: no-repeat;
+}
+
+.info-name {
+  margin-top: 0.625em;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #555;
+}
+
+.info-cases,
+.info-active,
+.info-recovered,
+.info-deaths,
+.info-vaccinations {
+  font-size: 1em;
+  margin-top: 0.3125em;
+}
+
+@media (max-width: 620px) {
+  .app__map {
+    height: 40vh;
+  }
+
+  .leaflet-popup-content-wrapper {
+    font-size: 0.6rem;
+  }
+}

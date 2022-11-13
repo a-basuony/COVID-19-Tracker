@@ -1,0 +1,142 @@
+body {
+  background-color: whitesmoke;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  max-width: 334.4px;
+}
+
+.app__king {
+  margin: 45px auto 0;
+}
+
+.app__king > a {
+  text-decoration: none;
+  color: rgb(23, 75, 247);
+}
+
+.app__table {
+  display: flex;
+}
+
+.app__graph > h3 {
+  text-transform: capitalize;
+}
+
+/* .app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .app__graph {
+  flex-grow: 1;
+} */
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  font-size: 2rem;
+  text-align: center;
+  /* color: red; */
+}
+
+.app__header__logo {
+  height: 100px;
+  width: 100px;
+}
+
+.app__lastUpdated {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-end;
+}
+
+.app__lastUpdated__alert {
+  border-radius: 10px !important;
+  /* background-color: #E8F4FD !important; */
+}
+.app__lastUpdated__alert--info {
+  border: 1px solid #35a0f4 !important;
+}
+
+.app__lastUpdated__alert--warning {
+  border: 1px solid #ffa117 !important;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+/* Scrollbar settings */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .app__right {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .app__stats {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app__header {
+    flex-direction: column;
+  }
+
+  .app__right {
+    height: 115vmax;
+  }
+
+  .app__lastUpdated {
+    justify-content: center;
+  }
+}
